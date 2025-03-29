@@ -1,0 +1,71 @@
+/* Background Color */
+.stApp {
+    background-color: rgb(89, 22, 197);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #E5BEEC;  /* Light Lavender */
+    font-family: "Poppins", sans-serif;
+}
+
+/* Input Fields */
+input, textarea {
+    color: #000000 !important; /* Black text for better readability */
+    background-color: rgba(255, 255, 255, 0.2) !important; /* Slight transparency */
+    border: 1px solid #E5BEEC !important;
+    border-radius: 6px;
+    padding: 8px;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus, textarea:focus {
+    border-color: #FDE2F3 !important; /* Soft Pink */
+    box-shadow: 0px 0px 8px #FDE2F3 !important;
+    outline: none;
+}
+
+/* Text Styling */
+h1, h2, h3, h4, h5, h6, p, label {
+    color: #E5BEEC !important;
+}
+
+/* Button Styling */
+.stButton>button {
+    background-color: #917FB3;  /* Lavender Purple */
+    color: white;
+    border-radius: 8px;
+    border: 2px solid aqua;
+    padding: 10px;
+    transition: all 0.3s ease-in-out;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.stButton>button:hover {
+    background-color: #887bea;
+    color: #2A2F4F;
+    border-color: #2A2F4F;
+    transform: scale(1.1);
+    box-shadow: 0px 4px 12px rgba(136, 123, 234, 0.5);
+}
+
+/* Animation for Smooth Page Load */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+h1, h2, h3, h4, h5, h6 {
+    animation: fadeIn 0.6s ease-in-out;
+}
+
+/* Glow Effect on Input Hover */
+input:hover, textarea:hover {
+    box-shadow: 0px 0px 10px rgba(253, 226, 243, 0.6);
+}
+
+/* Card-Like Styling for Inputs */
+div[data-testid="stTextInput"], div[data-testid="stTextArea"] {
+    padding: 5px;
+    border-radius: 8px;
+}
